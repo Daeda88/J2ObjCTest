@@ -1,0 +1,12 @@
+PODS:
+  - J2ObjC-Framework (1.0.2.2)
+
+DEPENDENCIES:
+  - J2ObjC-Framework
+
+SPEC CHECKSUMS:
+  J2ObjC-Framework: 7b9e97ac76ebbabbdb11997948e216dab5af0296
+
+PODFILE CHECKSUM: a52ba75e284c1c2fefcd3b70712e6d65d43541cd
+
+COCOAPODS: 1.0.1
