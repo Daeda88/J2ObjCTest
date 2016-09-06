@@ -7,7 +7,7 @@
 
 + (NSString *) getSomeString {
     JavaUtilRandom* random = [[JavaUtilRandom alloc] init];
-    return [NSString stringWithFormat:@"Random Java Int: %d", [random nextInt]];
+    return [NSString stringWithFormat:@"Subspec Random Java Int: %d", [random nextInt]];
 }
 
 @end
