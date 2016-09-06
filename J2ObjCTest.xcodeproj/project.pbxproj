@@ -565,7 +565,7 @@
 				);
 				INFOPLIST_FILE = J2ObjCTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/J2ObjC-Framework/Distributive/lib";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"icucore\"",
@@ -594,7 +594,7 @@
 				);
 				INFOPLIST_FILE = J2ObjCTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/J2ObjC-Framework/Distributive/lib";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"icucore\"",

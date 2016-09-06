@@ -7,4 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'Some SubSpec.'
   spec.source       = { :path => './' }
   spec.source_files = 'subSpec.{h,m}'
+  spec.xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/J2ObjC-Framework/Distributive/include"',
+  'LIBRARY_SEARCH_PATHS' =>  '"${PODS_ROOT}/J2ObjC-Framework/Distributive/lib"',
+  'OTHER_LDFLAGS' => '-ljre_emul'}
 end
