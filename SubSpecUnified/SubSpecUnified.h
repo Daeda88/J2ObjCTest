@@ -1,7 +1,7 @@
 
 #include "java/util/Random.h"
 
-@interface SubSpec
+@interface SubSpecUnified
 
 + (JavaUtilRandom *) getRandomizer;
 + (NSString *) getSomeString;

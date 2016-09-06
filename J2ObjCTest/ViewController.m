@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-#include "subSpec.h"
+#include "SubSpecA.h"
+#include "SubSpecB.h"
+#include "SubSpecUnified.h"
 
 @interface ViewController ()
 
@@ -18,8 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog([SubSpec getSomeString]);
-    JavaUtilRandom* random = [SubSpec getRandomizer];
+    NSLog([SubSpecA getSomeString]);
+    NSLog([SubSpecB getSomeString]);
+    NSLog([SubSpecUnified getSomeString]);
+    JavaUtilRandom* random = [SubSpecUnified getRandomizer];
     NSLog([NSString stringWithFormat:@"VC Random Java Int: %d", [random nextInt]]);
     
     

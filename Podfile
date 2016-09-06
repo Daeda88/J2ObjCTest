@@ -13,7 +13,9 @@ target "J2ObjCTest" do
 	project 'J2ObjCTest'
 
 	pod 'J2ObjC-Framework'
-	pod 'SubSpec', source = { :path => './SubSpec'}
+	pod 'SubSpecA', source = { :path => './SubSpecA'}
+	pod 'SubSpecB', source = { :path => './SubSpecB'}
+	pod 'SubSpecUnified', source = { :path => './SubSpecUnified'}
 end
 
 target "J2ObjCTestTests" do
