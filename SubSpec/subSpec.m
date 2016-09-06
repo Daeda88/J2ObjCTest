@@ -1,12 +1,14 @@
 
 #import "subSpec.h"
 
-#include "java/util/Random.h"
-
 @implementation SubSpec
 
++ (JavaUtilRandom*) getRandomizer {
+    return [[JavaUtilRandom alloc] init];
+}
+
 + (NSString *) getSomeString {
-    JavaUtilRandom* random = [[JavaUtilRandom alloc] init];
+    JavaUtilRandom* random = [SubSpec getRandomizer];
     return [NSString stringWithFormat:@"Subspec Random Java Int: %d", [random nextInt]];
 }
 
