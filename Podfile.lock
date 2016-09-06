@@ -1,12 +1,19 @@
 PODS:
   - J2ObjC-Framework (1.0.2.2)
+  - SubSpec (1.0.0)
 
 DEPENDENCIES:
   - J2ObjC-Framework
+  - SubSpec (from `./SubSpec`)
+
+EXTERNAL SOURCES:
+  SubSpec:
+    :path: "./SubSpec"
 
 SPEC CHECKSUMS:
   J2ObjC-Framework: 7b9e97ac76ebbabbdb11997948e216dab5af0296
+  SubSpec: 6566c4c75b8814097219bd91bd6b7448102ca573
 
-PODFILE CHECKSUM: a52ba75e284c1c2fefcd3b70712e6d65d43541cd
+PODFILE CHECKSUM: 2fe6f617a3d423feb76892ee7106a15ccb10fb96
 
 COCOAPODS: 1.0.1

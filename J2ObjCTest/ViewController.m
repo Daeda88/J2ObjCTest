@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #include "java/util/Random.h"
+#include "subSpec.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,8 @@
     [super viewDidLoad];
     
     JavaUtilRandom* random = [[JavaUtilRandom alloc] init];
-    NSLog([NSString stringWithFormat:@"Random Java Int: %d", [random nextInt]]);
+    NSLog([NSString stringWithFormat:@"Random Java Int: %d %@", [random nextInt], [SubSpec getSomeString]]);
+    
     
     // Do any additional setup after loading the view, typically from a nib.
 }

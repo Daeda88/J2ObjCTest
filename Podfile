@@ -13,6 +13,7 @@ target "J2ObjCTest" do
 	project 'J2ObjCTest'
 
 	pod 'J2ObjC-Framework'
+	pod 'SubSpec', source = { :path => './SubSpec'}
 end
 
 target "J2ObjCTestTests" do
