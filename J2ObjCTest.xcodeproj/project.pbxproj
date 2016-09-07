@@ -11,6 +11,7 @@
 		1E3F7E470140918BC53E9396 /* Pods_J2ObjCTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83B3D8344CD9C30037E7B35 /* Pods_J2ObjCTestTests.framework */; };
 		2004EDEC1D7F005300098077 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2004EDEB1D7F005300098077 /* libz.tbd */; };
 		2004EDEE1D7F005A00098077 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2004EDED1D7F005A00098077 /* Security.framework */; };
+		2004EDF01D80170C00098077 /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2004EDEF1D80170C00098077 /* JRE.framework */; };
 		207C3CEA1D7ECA69002B24C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C3CE91D7ECA69002B24C6 /* main.m */; };
 		207C3CED1D7ECA69002B24C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C3CEC1D7ECA69002B24C6 /* AppDelegate.m */; };
 		207C3CF01D7ECA69002B24C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C3CEF1D7ECA69002B24C6 /* ViewController.m */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		2004EDEB1D7F005300098077 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2004EDED1D7F005A00098077 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2004EDEF1D80170C00098077 /* JRE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JRE.framework; path = "Pods/J2ObjC-Framework/Distributive/frameworks/JRE.framework"; sourceTree = "<group>"; };
 		207C3CE51D7ECA69002B24C6 /* J2ObjCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J2ObjCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207C3CE91D7ECA69002B24C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		207C3CEB1D7ECA69002B24C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2004EDF01D80170C00098077 /* JRE.framework in Frameworks */,
 				2004EDEE1D7F005A00098077 /* Security.framework in Frameworks */,
 				2004EDEC1D7F005300098077 /* libz.tbd in Frameworks */,
 				1B8B1DEE37C4F863AA625975 /* Pods_J2ObjCTest.framework in Frameworks */,
@@ -172,6 +175,7 @@
 		991BA84D0BA7A59A07566D5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2004EDEF1D80170C00098077 /* JRE.framework */,
 				2004EDED1D7F005A00098077 /* Security.framework */,
 				2004EDEB1D7F005300098077 /* libz.tbd */,
 				BA397F5931CD76C5B25C73B6 /* Pods_J2ObjCTest.framework */,
@@ -558,6 +562,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PODS_ROOT)/J2ObjC-Framework/Distributive/frameworks",
+					"$(PROJECT_DIR)/Pods/J2ObjC-Framework/Distributive/frameworks",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -572,7 +577,6 @@
 					"-l\"z\"",
 					"-framework",
 					"\"Security\"",
-					"-ljre_emul",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Tacx.J2ObjCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -587,6 +591,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PODS_ROOT)/J2ObjC-Framework/Distributive/frameworks",
+					"$(PROJECT_DIR)/Pods/J2ObjC-Framework/Distributive/frameworks",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -601,7 +606,6 @@
 					"-l\"z\"",
 					"-framework",
 					"\"Security\"",
-					"-ljre_emul",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Tacx.J2ObjCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

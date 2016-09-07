@@ -5,8 +5,9 @@
 @implementation SubSpecA
 
 + (NSString *) getSomeString {
-    JavaUtilRandom* random = [SubSpecUnified getRandomizer];
-    return [NSString stringWithFormat:@"SubSpec A Random Java Int: %d", [random nextInt]];
+    JavaUtilRandom* randomA = [[JavaUtilRandom alloc] init];
+    JavaUtilRandom* randomUN = [SubSpecUnified getRandomizer];
+    return [NSString stringWithFormat:@"SubSpec A Random Java Int A: %d UN %d", [randomA nextInt], [randomUN nextInt]];
 }
 
 @end

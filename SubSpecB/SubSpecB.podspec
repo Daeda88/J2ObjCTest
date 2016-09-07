@@ -12,7 +12,5 @@ Pod::Spec.new do |spec|
   spec.xcconfig = { 
    'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/J2ObjC-Framework/Distributive/frameworks"',
    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/J2ObjC-Framework/Distributive/include"',
-  'LIBRARY_SEARCH_PATHS' =>  '"${PODS_ROOT}/J2ObjC-Framework/Distributive/lib"',
-  'OTHER_LDFLAGS' => '-ljre_emul',
 "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"}
 end
