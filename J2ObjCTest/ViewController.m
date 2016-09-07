@@ -23,7 +23,10 @@
     NSLog([SubSpecA getSomeString]);
     NSLog([SubSpecB getSomeString]);
     NSLog([SubSpecUnified getSomeString]);
-    JavaUtilRandom* random = [SubSpecUnified getRandomizer];
+    
+//    JavaUtilRandom* random = [SubSpecUnified getRandomizer]; // ENABLE THIS TO GET RID OF IMPLEMENTED IN BOTH MESSAGES
+    JavaUtilRandom* random = [[JavaUtilRandom alloc] init]; // DISABLE THIS TO GET RID OF IMPLEMENTED IN BOTH MESSAGES
+    
     NSLog([NSString stringWithFormat:@"VC Random Java Int: %d", [random nextInt]]);
     
     
